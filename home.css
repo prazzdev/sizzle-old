@@ -1,0 +1,225 @@
+nav {
+  position: relative;
+  background-color: #f3f3f3;
+  padding-bottom: 15vh;
+}
+
+nav > #nav-menu {
+  position: absolute;
+  top: 4vh;
+  z-index: 10;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 13vw 0; */
+  padding: 0 7vw;
+  /* background: #ffad2b; */
+}
+
+nav > #nav-menu > div {
+  background-color: none;
+  border: none;
+  max-width: 10%;
+  max-height: fit-content;
+}
+nav > #nav-menu > div > button {
+  background-color: transparent;
+  border: none;
+}
+nav > #nav-menu > div:nth-child(1) > button > img {
+  width: 28px;
+  height: 28px;
+}
+nav > #nav-menu > div:last-child > button > img {
+  width: 32px;
+  height: 32px;
+}
+
+nav > #nav-menu > form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  /* background: rgba(255, 255, 255, 0.3); */
+}
+nav > #nav-menu > form > #search-icon {
+  position: absolute;
+  top: 1.4vh;
+  right: 8vw;
+}
+nav > #nav-menu > form > input {
+  position: relative;
+  width: 85%;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  font-size: 1em;
+  padding: 1.5vw 4vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* MAIN */
+main > #main-navigation {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  margin-bottom: 4vh;
+  padding: 0 0 0 7vw;
+}
+#main-navigation > a {
+  text-decoration: none;
+  color: #333a73;
+  font-size: 0.9em;
+}
+/* temporary */
+#main-navigation > a:nth-child(1) {
+  position: relative;
+}
+#main-navigation > a:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+main > section {
+  padding: 0 0 0 7vw;
+  margin-bottom: 5vh;
+}
+section > #section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7vw 0 0;
+  margin: 0 0 3vh 0;
+}
+#section-head > #section-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+#section-head > a {
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #333a73;
+}
+section > #section-body {
+  width: 100%;
+}
+#section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: start; */
+  gap: 1em;
+  overflow-x: scroll;
+  padding: 0 7vw 1vh 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#section-wrapper::-webkit-scrollbar {
+  display: hidden;
+}
+#section-wrapper > #service-card {
+  width: fit-content;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  flex: 0 0 auto;
+}
+#service-card > #card-head > img {
+  width: 100%;
+}
+#service-card > #description {
+  background-color: white;
+  padding: 0.2em 0.8em 0.6em;
+}
+#service-card > #description > #title {
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+#service-card > #description > #author {
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-bottom: 0.6vh;
+}
+#service-card > #description > #rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  margin-bottom: 0.4vh;
+  gap: 1vw;
+}
+#service-card > #description > #rating > #stars {
+  margin-right: 1vw;
+}
+#service-card > #description > #rating > #ulasan {
+  font-size: 0.7em;
+}
+#service-card > #description > #price {
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+#service-card > #description > #time {
+  display: flex;
+  align-items: center;
+  font-size: 0.6em;
+  font-weight: 500;
+  margin-top: 0.7em;
+}
+#service-card > #description > #time > img {
+  margin-right: 0.5em;
+}
+
+section#cooking-technique > #section-body > #section-wrapper {
+  padding: 0 7vw 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+#cooking-technique-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+#cooking-technique-card > #card-head > img {
+  max-height: 120px;
+}
+#cooking-technique-card > #card-description {
+  padding: 0.2em 0.8em;
+}
+#cooking-technique-card > #card-description > #title {
+  font-size: 0.6em;
+}
+#cooking-technique-card > #card-description > #category {
+  font-size: 0.6em;
+  margin: 0.6em 0;
+}
+#cooking-technique-card > #card-description > #description {
+  font-size: 0.6em;
+  text-align: justify;
+}
+#cooking-technique-card > #card-description > #author-and-date {
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  nav,
+  main {
+    display: none;
+  }
+}
