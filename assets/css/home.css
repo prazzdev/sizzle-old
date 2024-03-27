@@ -133,6 +133,8 @@ section > #section-body {
   overflow: hidden;
   background-color: white;
   flex: 0 0 auto;
+  text-decoration: none;
+  color: #333a73;
 }
 #service-card > #card-head > img {
   width: 100%;

@@ -1,0 +1,157 @@
+#course-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#course-detail-wrapper > #hero {
+  position: relative;
+}
+#hero > img {
+  max-width: 100vw;
+  max-height: 35vh;
+}
+#hero > a {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+}
+#hero > a > img {
+  width: 11vw;
+}
+#hero > a > img::after {
+  content: "";
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+#course-detail-wrapper > #description {
+  padding: 2vh 0;
+}
+#description > #title {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-bottom: 1.4vh;
+  padding: 0 6vw;
+}
+#description > #chef {
+  padding: 0 6vw;
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
+}
+#description > #rating {
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  margin-bottom: 0.4vh;
+  gap: 1vw;
+}
+#rating > #stars {
+  margin-right: 1vw;
+}
+#stars > img {
+  width: 4vw;
+}
+#rating > #number {
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+#rating > #ulasan {
+  font-size: 1em;
+}
+#description > #created-by {
+  font-size: 0.8em;
+  padding: 0 6vw;
+  margin: 0.8em 0;
+}
+#description > #region {
+  font-size: 0.8em;
+  padding: 0 6vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4em;
+}
+#description > #matter {
+  background: #eeeeee;
+  margin: 7vw;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border-radius: 20px;
+}
+#matter > h1 {
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+}
+#matter > ul > li {
+  list-style: none;
+  font-size: 0.7em;
+  font-weight: 500;
+  line-height: 1.7em;
+}
+#features {
+  padding: 0 6vw;
+  margin-bottom: 1em;
+}
+#features > h1 {
+  font-size: 1em;
+  margin-bottom: 0.6em;
+  font-weight: bolder;
+}
+#features > ul > li {
+  list-style: none;
+  font-size: 0.7em;
+  font-weight: 500;
+  line-height: 1.7em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+  margin-left: 0.5em;
+}
+
+#description {
+  padding: 0 6vw;
+  margin-bottom: 2.7em;
+}
+#description > h1 {
+  font-size: 1em;
+  margin-bottom: 0.6em;
+  font-weight: bolder;
+}
+#description > p {
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+#checkout-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8aa2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.1em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#checkout-section > #amount {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#checkout-section > a {
+}
+#checkout-section > a > button {
+  border: none;
+  background: radial-gradient(#8289c1 4%, #333a73);
+  font-size: 0.8em;
+  padding: 1em 1em 1em;
+  color: white;
+  font-family: "Montserrat Regular";
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 30px;
+  width: 170px;
+}
