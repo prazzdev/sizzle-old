@@ -167,3 +167,11 @@ div#remember-me-checkbox > span {
 #sign-others > a > img {
   width: 3em;
 }
+
+@media (min-width: 768px) {
+  div#sign-form-wrapper,
+  div#sign-bottom,
+  div#bottom-waves {
+    display: none;
+  }
+}
