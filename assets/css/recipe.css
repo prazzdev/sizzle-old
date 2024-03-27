@@ -1,0 +1,124 @@
+#recipe-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#recipe-detail-wrapper > #hero {
+  position: relative;
+}
+#hero > img {
+  max-width: 100vw;
+  max-height: 35vh;
+}
+#hero > a {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+}
+#hero > a > img {
+  width: 11vw;
+}
+#hero > #play-button {
+  border: none;
+  position: absolute;
+  top: 40%;
+  right: 43%;
+  background-color: transparent;
+}
+#play-button > img {
+  width: 55px;
+}
+
+#recipe-detail-wrapper > #description {
+  padding: 2vh 0;
+}
+#description > #title {
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin-bottom: 1.4vh;
+  padding: 0 6vw;
+}
+#description > #rating {
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  margin-bottom: 0.4vh;
+  gap: 1vw;
+}
+#rating > #stars {
+  margin-right: 1vw;
+}
+#stars > img {
+  width: 4vw;
+}
+#rating > #number {
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+#rating > #ulasan {
+  font-size: 1em;
+}
+#description > #spec-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2em 0;
+  padding: 0 6vw;
+}
+#spec-wrapper > #spec {
+  background-color: #fdac2b;
+  min-width: 32%;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em;
+  gap: 0.3vh;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.2);
+  padding: 0 6vw;
+}
+#spec > h5:first-child {
+  font-weight: bolder;
+  font-size: 10px;
+}
+#spec > h5:last-child {
+  font-weight: 600;
+  font-size: 8px;
+}
+
+#description > #desc {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 1.5em;
+  padding: 0 6vw;
+}
+
+#description > #comp-step {
+  background-color: #eeeeee;
+  padding: 1em 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 3vh 6vw;
+  min-height: 430px;
+  margin-bottom: -1em;
+}
+#comp-step > #composition > h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 0.6em;
+}
+#composition > ul {
+  margin-bottom: 1.4em;
+}
+#composition > ul > li,
+#step > ul > li {
+  margin-left: 1.8em;
+}
+#step > h1 {
+  font-size: 0.9em;
+  font-weight: bolder;
+  margin-bottom: 0.6em;
+}

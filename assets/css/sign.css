@@ -112,19 +112,23 @@ body {
   font-weight: bold;
 }
 #decisions > #remember-me-checkbox {
-  display: flex;
+  width: 50%;
+  /* display: flex; */
   flex-direction: row;
   background-color: salmon;
 }
 #decisions > #remember-me-checkbox > input[type="checkbox"] {
   border: none;
-  width: auto;
   background-color: transparent;
+  margin: 0 -1em;
 }
 div#remember-me-checkbox > span {
   background-color: teal;
 }
 
+#decisions > #forgot-password {
+  width: 50%;
+}
 #decisions > #forgot-password > a {
   text-decoration: none;
 }
