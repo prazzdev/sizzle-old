@@ -43,10 +43,6 @@ body {
   color: #333a73;
   font-weight: bold;
 }
-#sign-options > a:nth-child(1) {
-  /* position: relative; */
-  text-decoration: underline;
-}
 /* #sign-options > a::nth-child(1)::after {
   content: "";
   position: absolute;
@@ -91,7 +87,6 @@ body {
 }
 #sign-form input[type="email"] {
   position: relative;
-  /* background-color: salmon; */
 }
 #sign-form input[type="email"]::before {
   content: "egege";
@@ -112,18 +107,24 @@ body {
   font-weight: bold;
 }
 #decisions > #remember-me-checkbox {
-  width: 50%;
-  /* display: flex; */
+  height: 20px;
+  display: flex;
   flex-direction: row;
-  background-color: salmon;
+  gap: 0.2em;
 }
-#decisions > #remember-me-checkbox > input[type="checkbox"] {
+#remember-me-checkbox input {
   border: none;
   background-color: transparent;
   margin: 0 -1em;
+  display: block;
+  border-radius: 10px;
+  margin-left: -6vw;
+  margin-right: -5vw;
 }
 div#remember-me-checkbox > span {
-  background-color: teal;
+  min-width: 90px;
+  color: #333a73;
+  font-weight: bold;
 }
 
 #decisions > #forgot-password {
@@ -169,7 +170,7 @@ div#remember-me-checkbox > span {
   text-decoration: none;
 }
 #sign-others > a > img {
-  width: 3em;
+  width: 2.9em;
 }
 
 @media (min-width: 768px) {
