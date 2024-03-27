@@ -1,0 +1,169 @@
+body {
+  min-height: 100vh;
+}
+
+#sign-form-wrapper {
+  background: linear-gradient(#ffffff, #ffad2b);
+  min-height: 70vh;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  padding: 5vh 12vw;
+  border-bottom-left-radius: 3.3em;
+  border-bottom-right-radius: 3.3em;
+}
+
+#sign-form-wrapper > #sign-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+#sign-top > #sizzle-logo {
+  background: radial-gradient(rgba(255, 255, 255, 0.4), #fff);
+  border-radius: 50%;
+  padding: 0.5em 0.7em;
+  margin-bottom: 0.5em;
+}
+#sign-top > #sizzle-logo > img {
+  width: 65px;
+  height: 65px;
+}
+#sign-top > #sign-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8vw;
+}
+#sign-options > a {
+  text-decoration: none;
+  color: #333a73;
+  font-weight: bold;
+}
+#sign-options > a:nth-child(1) {
+  /* position: relative; */
+  text-decoration: underline;
+}
+/* #sign-options > a::nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+} */
+
+#sign-main {
+  display: flex;
+  flex-direction: column;
+}
+#sign-main > #sign-form {
+  display: flex;
+  flex-direction: column;
+}
+#sign-form > #input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  background-color: white;
+  padding: 6vh 7vw;
+  border-radius: 2.5em;
+  box-shadow: 0 1px 25px 5px rgba(0, 0, 0, 0.3);
+}
+#sign-form input {
+  border: none;
+  min-width: 100%;
+  border-bottom: 0.28vh solid #333a737e;
+  padding: 0 0 1vh 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #333a73;
+  margin-bottom: 2vh;
+  letter-spacing: 0.1vw;
+}
+#sign-form input::placeholder {
+  color: #333a73;
+  font-family: "Montserrat Regular";
+}
+#sign-form input[type="email"] {
+  position: relative;
+  /* background-color: salmon; */
+}
+#sign-form input[type="email"]::before {
+  content: "egege";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /* background-image: url("../../assets/images/icons/envelope.svg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+#sign-form > #decisions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin: 5vh 0;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+#decisions > #remember-me-checkbox {
+  display: flex;
+  flex-direction: row;
+  background-color: salmon;
+}
+#decisions > #remember-me-checkbox > input[type="checkbox"] {
+  border: none;
+  width: auto;
+  background-color: transparent;
+}
+div#remember-me-checkbox > span {
+  background-color: teal;
+}
+
+#decisions > #forgot-password > a {
+  text-decoration: none;
+}
+
+#sign-button {
+  border: none;
+  background: radial-gradient(#8289c1 4%, #333a73);
+  font-size: 1.2em;
+  padding: 0.4em 2.8em 0.6em;
+  color: white;
+  font-family: "Montserrat Regular";
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+#sign-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0 0.7em;
+}
+#sign-bottom > p {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+#sign-bottom > #sign-others {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7em;
+}
+#sign-others > a {
+  text-decoration: none;
+}
+#sign-others > a > img {
+  width: 3em;
+}

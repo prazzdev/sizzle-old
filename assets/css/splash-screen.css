@@ -1,0 +1,49 @@
+.splash-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #eca029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fba834;
+}
+.splash-container > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-width: 100vw;
+  min-height: 90vh;
+  padding: 17vw;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.splash-container > .wrapper > #sizzle-logo {
+  width: 250px;
+  margin-bottom: 4vh;
+}
+.splash-container > .wrapper > #sizzle-tagline {
+  text-align: justify;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+.splash-container > .wrapper > #copyright {
+  position: absolute;
+  bottom: 2.4vh;
+  left: 20;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  nav,
+  main,
+  div#top-waves,
+  div.splash-container {
+    display: none;
+  }
+}
