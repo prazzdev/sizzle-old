@@ -16,40 +16,6 @@
       name="description"
       content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
     />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
-    <meta
-      property="og:title"
-      content="Sizzle - Tingkatkan Kemahiran Masak Anda, Sajikan Kreativitas Setiap Hidangan!"
-    />
-    <meta
-      property="og:description"
-      content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
-    />
-    <meta
-      property="og:image"
-      content="https://metatags.io/images/meta-tags.png"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
-    <meta
-      property="twitter:title"
-      content="Sizzle - Tingkatkan Kemahiran Masak Anda, Sajikan Kreativitas Setiap Hidangan!"
-    />
-    <meta
-      property="twitter:description"
-      content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
-    />
-    <meta
-      property="twitter:image"
-      content="https://metatags.io/images/meta-tags.png"
-    />
-
-    <!-- Meta Tags Generated with https://metatags.io -->
     <link
       rel="shortcut icon"
       href="https://sizzlezzz.vercel.app/assets/images/icons/favicon.ico"
@@ -57,6 +23,11 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/sign.css" />
+    <style>
+      #sign-options > a:nth-child(1) {
+        text-decoration: underline;
+      }
+    </style>
     <title>Sign In | Sizzle</title>
   </head>
   <body>
@@ -66,12 +37,12 @@
           <img src="assets/images/sizzle-logo.svg" alt="Sizzle Logo" />
         </div>
         <div id="sign-options">
-          <a href="">Sign In</a>
-          <a href="">Sign Up</a>
+          <a href="#">Sign In</a>
+          <a href="signup.html">Sign Up</a>
         </div>
       </div>
       <div id="sign-main">
-        <form action="" id="sign-form">
+        <form action="index.html" id="sign-form">
           <div id="input-wrapper">
             <input type="email" placeholder="Email" id="email" />
             <input type="password" placeholder="Password" id="password" />
@@ -85,7 +56,7 @@
               <a href="">Forgot your password?</a>
             </div>
           </div>
-          <button id="sign-button">Sign In</button>
+          <button type="submit" id="sign-button">Sign In</button>
         </form>
       </div>
     </div>

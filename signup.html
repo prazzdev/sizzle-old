@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
     <meta
       name="title"
       content="Sizzle - Tingkatkan Kemahiran Masak Anda, Sajikan Kreativitas Setiap Hidangan!"
@@ -12,40 +11,6 @@
       name="description"
       content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
     />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sizzlezz.vercel.app" />
-    <meta
-      property="og:title"
-      content="Sizzle - Tingkatkan Kemahiran Masak Anda, Sajikan Kreativitas Setiap Hidangan!"
-    />
-    <meta
-      property="og:description"
-      content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
-    />
-    <meta
-      property="og:image"
-      content="https://sizzlezzz.vercel.app/assets/images/sizzlezzz.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://sizzlezzz.vercel.app" />
-    <meta
-      property="twitter:title"
-      content="Sizzle - Tingkatkan Kemahiran Masak Anda, Sajikan Kreativitas Setiap Hidangan!"
-    />
-    <meta
-      property="twitter:description"
-      content="Temukan keahlian memasak Anda dengan Sizzle! Dapatkan akses ke kursus online interaktif dan resep masakan yang lezat. Mulai petualangan kuliner Anda sekarang!"
-    />
-    <meta
-      property="twitter:image"
-      content="https://sizzlezzz.vercel.app/assets/images/sizzlezzz.jpg"
-    />
-
-    <!-- Meta Tags Generated with https://metatags.io -->
     <link
       rel="shortcut icon"
       href="https://sizzlezzz.vercel.app/assets/images/icons/favicon.ico"
@@ -53,6 +18,11 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/sign.css" />
+    <style>
+      #sign-options > a:nth-child(2) {
+        text-decoration: underline;
+      }
+    </style>
     <title>Sign Up | Sizzle</title>
   </head>
   <body>
@@ -62,12 +32,12 @@
           <img src="assets/images/sizzle-logo.svg" alt="Sizzle Logo" />
         </div>
         <div id="sign-options">
-          <a href="">Sign In</a>
-          <a href="">Sign Up</a>
+          <a href="signin.html">Sign In</a>
+          <a href="#">Sign Up</a>
         </div>
       </div>
       <div id="sign-main">
-        <form action="" id="sign-form">
+        <form action="index.html" id="sign-form">
           <div id="input-wrapper">
             <input type="text" placeholder="Username" id="username" />
             <input type="email" placeholder="Email" id="email" />
@@ -79,7 +49,7 @@
             />
             <br />
             <br /><br />
-            <button id="sign-button">Sign Up</button>
+            <button type="submit" id="sign-button">Sign Up</button>
           </div>
         </form>
       </div>
