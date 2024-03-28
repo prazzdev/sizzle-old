@@ -129,3 +129,10 @@
   font-weight: bolder;
   margin-bottom: 0.6em;
 }
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  #recipe-detail-wrapper {
+    display: none;
+  }
+}

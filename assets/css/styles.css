@@ -60,6 +60,14 @@ div#bottom-waves > img {
   font-size: 1.5em;
   font-weight: 700;
 }
+#mobile-screen-only code {
+  font-weight: bolder;
+  background-color: orange;
+  padding: 0.5em 0.8em;
+  margin: 0 0.3em;
+  border-radius: 0.5em;
+  color: #333a73;
+}
 
 /* MEDIA QUERY */
 @media (min-width: 768px) {
@@ -67,5 +75,7 @@ div#bottom-waves > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1em;
   }
 }
